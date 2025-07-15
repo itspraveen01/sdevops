@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping Cart</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f5f5f5; margin: 0; padding: 20px;">
+
+  <div style="max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+    <h1 style="text-align: center; margin-bottom: 20px;">Shopping Cart</h1>
+
+    <!-- Cart Item 1 -->
+    <div style="display: flex; align-items: center; border-bottom: 1px solid #ddd; padding: 15px 0;">
+      <img src="https://via.placeholder.com/100" alt="Product 1" style="width: 100px; height: auto; border-radius: 8px;">
+      <div style="flex: 1; padding: 0 20px;">
+        <h2 style="margin: 0;">Product Name 1</h2>
+        <p style="margin: 5px 0;">Price: $29.99</p>
+        <p style="margin: 5px 0;">Quantity: 1</p>
+      </div>
+      <div style="font-weight: bold;">
+        <p style="margin: 0;">$29.99</p>
+      </div>
+    </div>
+
+    <!-- Cart Item 2 -->
+    <div style="display: flex; align-items: center; border-bottom: 1px solid #ddd; padding: 15px 0;">
+      <img src="https://via.placeholder.com/100" alt="Product 2" style="width: 100px; height: auto; border-radius: 8px;">
+      <div style="flex: 1; padding: 0 20px;">
+        <h2 style="margin: 0;">Product Name 2</h2>
+        <p style="margin: 5px 0;">Price: $19.99</p>
+        <p style="margin: 5px 0;">Quantity: 2</p>
+      </div>
+      <div style="font-weight: bold;">
+        <p style="margin: 0;">$39.98</p>
+      </div>
+    </div>
+
+    <!-- Cart Summary -->
+    <div style="text-align: right; margin-top: 20px;">
+      <h3 style="margin: 0;">Total: $69.97</h3>
+      <button style="background-color: #28a745; color: white; padding: 12px 20px; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; margin-top: 10px;">
+        Proceed to Checkout
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>
