@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yoga Day Registration</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;500&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(to right, #a8edea, #fed6e3);
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      animation: slide-in 1s ease-out forwards;
+    }
+
+    @keyframes slide-in {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .form-container h2 {
+      font-family: 'Pacifico', cursive;
+      color: #ff6f61;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .form-group label {
+      position: absolute;
+      top: 12px;
+      left: 10px;
+      color: #999;
+      background: white;
+      padding: 0 5px;
+      transition: 0.3s;
+      pointer-events: none;
+    }
+
+    .form-group input:focus + label,
+    .form-group input:not(:placeholder-shown) + label {
+      top: -10px;
+      left: 5px;
+      font-size: 12px;
+      color: #ff6f61;
+    }
+
+    .form-group input:focus {
+      border-color: #ff6f61;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background-color: #ff6f61;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.4s, box-shadow 0.4s;
+    }
+
+    .submit-btn:hover {
+      background-color: #ff3e3e;
+      box-shadow: 0 0 15px #ff6f61;
+    }
+
+    @media (max-width: 500px) {
+      .form-container {
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Yoga Day Signup</h2>
+    <form>
+      <div class="form-group">
+        <input type="text" name="name" required placeholder=" " />
+        <label>Full Name</label>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" required placeholder=" " />
+        <label>Email Address</label>
+      </div>
+      <div class="form-group">
+        <input type="tel" name="phone" required placeholder=" " />
+        <label>Phone Number</label>
+      </div>
+      <div class="form-group">
+        <input type="text" name="city" required placeholder=" " />
+        <label>City</label>
+      </div>
+      <button type="submit" class="submit-btn">Register</button>
+    </form>
+  </div>
+
+</body>
+</html>
